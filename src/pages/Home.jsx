@@ -2,7 +2,7 @@ import React, { useEffect, useMemo, useRef, useState } from "react";
 import Logo from "../components/Logo";
 import NavBar from "../components/NavBar";
 
-export default function MaisonMurzaLanding() {
+export default function Home() {
   const IMAGES = useMemo(() => {
     const perche = Array.from(
       { length: 45 },
@@ -83,7 +83,7 @@ export default function MaisonMurzaLanding() {
   };
 
   return (
-    <div className="relative h-screen w-screen bg-white text-black select-none">
+    <div className="relative w-screen min-h-dvh select-none">
       <NavBar />
       <Logo />
 

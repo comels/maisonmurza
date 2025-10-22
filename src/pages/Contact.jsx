@@ -13,7 +13,7 @@ export default function Contact() {
   }, []);
 
   return (
-    <div className="relative h-screen w-screen select-none">
+    <div className="relative min-h-dvh w-screen select-none">
       <NavBar />
       <Logo />
 

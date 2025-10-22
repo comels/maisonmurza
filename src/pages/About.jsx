@@ -3,11 +3,11 @@ import NavBar from "../components/NavBar";
 
 export default function About() {
   return (
-    <div className="relative w-screen min-h-screen lg:h-screen select-none">
+    <div className="relative w-screen min-h-dvh select-none">
       <NavBar />
 
       {/* Bloc principal */}
-      <div className="flex flex-col lg:flex-row max-w-5xl gap-4 lg:gap-4 mx-auto pt-32 px-10 pb-10">
+      <div className="flex flex-col lg:flex-row max-w-5xl gap-4 lg:gap-4 mx-auto pt-20 lg:pt-32 px-10 pb-10">
         {/* Image à gauche (en haut sur mobile) */}
         <img
           src="/images/portrait.jpg"
