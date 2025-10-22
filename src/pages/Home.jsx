@@ -83,13 +83,13 @@ export default function Home() {
   };
 
   return (
-    <div className="relative w-screen min-h-dvh select-none">
+    <div className="relative h-screen w-screen select-none">
       <NavBar />
       <Logo />
 
       <div className="h-full w-full grid place-items-center">
         {!ready ? (
-          <div className="opacity-60 text-sm">Chargement…</div>
+          <div className="opacity-60 text-sm">Loading…</div>
         ) : (
           <button
             aria-label="Prochaine image"
