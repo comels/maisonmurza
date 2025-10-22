@@ -1,0 +1,56 @@
+@import "tailwindcss";
+
+/* === Polices AddingtonCF === */
+@font-face {
+  font-family: "AddingtonCF";
+  src: url("/fonts/AddingtonCF-Thin.ttf") format("truetype");
+  font-weight: 100;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "AddingtonCF";
+  src: url("/fonts/AddingtonCF-Light.ttf") format("truetype");
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "AddingtonCF";
+  src: url("/fonts/AddingtonCF-Regular.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "AddingtonCF";
+  src: url("/fonts/AddingtonCF-Medium.ttf") format("truetype");
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "AddingtonCF";
+  src: url("/fonts/AddingtonCF-DemiBold.ttf") format("truetype");
+  font-weight: 600;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "AddingtonCF";
+  src: url("/fonts/AddingtonCF-Bold.ttf") format("truetype");
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "AddingtonCF";
+  src: url("/fonts/AddingtonCF-ExtraBold.ttf") format("truetype");
+  font-weight: 800;
+  font-style: normal;
+}
+
+/* === Application globale === */
+body {
+  font-family: "AddingtonCF", serif;
+}
