@@ -1,5 +1,5 @@
 import React, { useEffect, useMemo, useRef, useState } from "react";
-import Logo from "../components/Logo";
+import { Link } from "react-router-dom";
 import NavBar from "../components/NavBar";
 
 export default function Home() {
@@ -85,7 +85,6 @@ export default function Home() {
   return (
     <div className="relative min-h-dvh w-screen select-none">
       <NavBar />
-      <Logo />
 
       <div className="h-full w-full pt-20 grid place-items-center">
         {!ready ? (
@@ -121,6 +120,21 @@ export default function Home() {
           </button>
         )}
       </div>
+      <Link
+        to="/"
+        className="absolute left-4 right-4 z-40 mb-4 flex justify-center items-end pointer-events-auto"
+        style={{
+          // marge bas = 16px + safe area iPhone
+          bottom: "calc(1rem + env(safe-area-inset-bottom))",
+        }}
+      >
+        <img
+          src="/images/logo.png"
+          alt="Maison Murza"
+          className="w-full h-full object-contain"
+          draggable={false}
+        />
+      </Link>
     </div>
   );
 }
