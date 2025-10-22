@@ -83,11 +83,11 @@ export default function Home() {
   };
 
   return (
-    <div className="relative h-screen w-screen select-none">
+    <div className="relative min-h-dvh w-screen select-none">
       <NavBar />
       <Logo />
 
-      <div className="h-full w-full grid place-items-center">
+      <div className="h-full w-full pt-20 grid place-items-center">
         {!ready ? (
           <div className="opacity-60 text-sm">Loading…</div>
         ) : (

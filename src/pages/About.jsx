@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import Logo from "../components/Logo";
 import NavBar from "../components/NavBar";
 
@@ -30,14 +31,14 @@ export default function About() {
       </div>
 
       {/* Logo : visible après le texte sur mobile/iPad, en bas sur desktop */}
-      <div className="block lg:hidden px-10 pb-4">
+      <Link to="/" className="block lg:hidden px-10 pb-4">
         <img
           src="/images/logo.png"
           alt="Maison Murza"
           className="w-full h-auto object-contain"
           draggable={false}
         />
-      </div>
+      </Link>
 
       {/* Version desktop (collé en bas) */}
       <div className="hidden lg:block">
