@@ -1,18 +1,22 @@
-import React, { useEffect, useMemo, useRef, useState } from "react";
+import { useEffect, useMemo, useRef, useState } from "react";
 import { Link } from "react-router-dom";
 import NavBar from "../components/NavBar";
 
 export default function Home() {
   const IMAGES = useMemo(() => {
-    const perche = Array.from(
-      { length: 45 },
-      (_, i) => `/images/perche-${i + 1}.jpg`
+    // Génère toutes les images
+    const all = Array.from(
+      { length: 59 },
+      (_, i) => `/images/${String(i + 1).padStart(2, "0")}.jpg`
     );
-    const deodat = Array.from(
-      { length: 22 },
-      (_, i) => `/images/deodat-${i + 1}.jpg`
-    );
-    return [...perche, ...deodat];
+
+    // Mélange le tableau (algorithme de Fisher-Yates)
+    for (let i = all.length - 1; i > 0; i--) {
+      const j = Math.floor(Math.random() * (i + 1));
+      [all[i], all[j]] = [all[j], all[i]];
+    }
+
+    return all;
   }, []);
 
   const AUTOPLAY_MS = 3500;

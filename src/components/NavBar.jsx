@@ -12,7 +12,7 @@ export default function NavBar() {
         </Link>
       </div>
       <a
-        href="https://www.instagram.com/agathe_soudan/"
+        href="https://www.instagram.com/maisonmurza/"
         target="_blank"
         rel="noopener noreferrer"
         className="hover:opacity-70"
